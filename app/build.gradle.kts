@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.barleytea.qrcodescanner"
-        minSdk = 28
+        minSdk = 30
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -51,18 +51,19 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // cameraX and ml-kit dependencies
-    implementation("androidx.camera:camera-core:1.3.1")
-    implementation("androidx.camera:camera-camera2:1.3.1")
-    implementation("androidx.camera:camera-lifecycle:1.3.1")
-    implementation("androidx.camera:camera-video:1.3.1")
-    implementation("androidx.camera:camera-view:1.3.1")
-    implementation("androidx.camera:camera-extensions:1.3.1")
-    implementation("androidx.camera:camera-mlkit-vision:1.4.0-alpha03")
-    implementation("com.google.mlkit:vision-common:17.3.0")
-    implementation("com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0")
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.video)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.camera.extionsions)
+    implementation(libs.androidx.camera.mlkit)
+    implementation(libs.google.mlkit)
+    implementation(libs.google.android.gms)
+
 
     // guava listenableFuture
-    implementation("com.google.guava:guava:31.0.1-android")
-    implementation("androidx.concurrent:concurrent-futures:1.1.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.6.0")
+    implementation(libs.guava)
+    implementation(libs.androidx.concurrent)
+    implementation(libs.kotlinx.coroutines.guava)
 }

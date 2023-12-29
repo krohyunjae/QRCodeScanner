@@ -9,6 +9,7 @@ androidxBrowser = "1.5.0"
 androidxComposeBom = "2023.09.01"
 androidxComposeCompiler = "1.5.2"
 androidxComposeMaterial3 = "1.2.0-alpha08"
+androidxConcurrent = "1.1.0"
 androidxConstraint = "2.1.4"
 androidxConstraintCompose = "1.0.1"
 androidxCoordinator = "1.2.0"
@@ -20,10 +21,12 @@ androidxHilt = "1.0.0"
 androidxLifecycle = "2.6.1"
 androidxNavigation = "2.7.6"
 
-androidCamera = "1.3.1"
-androidCameraMlKit = "1.4.0-alpha03"
+androidxCamera = "1.3.1"
+androidxCameraMlKit = "1.4.0-alpha03"
 googleMlKit = "17.3.0"
 googleBarcodeScanning = "18.3.0"
+
+guava = "31.0.1-android"
 
 rxandroid = "2.1.1"
 rxjava = "2.2.21"
@@ -54,6 +57,17 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 androidx-appcompat-resources = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
 androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidxAnnotation" }
 androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "androidxBrowser" }
+
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "androidxCamera" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "androidxCamera" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "androidxCamera" }
+androidx-camera-video = { group = "androidx.camera", name = "camera-video", version.ref = "androidxCamera" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "androidxCamera" }
+androidx-camera-extionsions = { group = "androidx.camera", name = "camera-extensions", version.ref = "androidxCamera" }
+androidx-camera-mlkit = { group = "androidx.camera", name = "camera-mlkit-vision", version.ref = "androidxCameraMlKit" }
+google-mlkit = { group = "com.google.mlkit", name = "vision-common", version.ref = "googleMlKit" }
+google-android-gms = { group = "com.google.android.gms", name = "play-services-mlkit-barcode-scanning", version.ref = "googleBarcodeScanning" }
+
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
 androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "androidxComposeCompiler" }
 androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
@@ -61,6 +75,7 @@ androidx-compose-material-iconsExtended = { group = "androidx.compose.material",
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "androidxComposeMaterial3" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-viewbinding = { group = "androidx.compose.ui", name = "ui-viewbinding" }
+androidx-concurrent = { group = "androidx.concurrent", name = "concurrent-futures", version.ref = "androidxConcurrent" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidxConstraint" }
 androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "androidxConstraintCompose" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
@@ -76,6 +91,7 @@ androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navi
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigation" }
 
 google-services = { group = "com.google.gms", name = "google-services", version.ref = "google-services" }
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
 
 rxandroid = { group = "io.reactivex.rxjava2", name = "rxandroid", version.ref = "rxandroid" }
 rxjava = { group = "io.reactivex.rxjava2", name = "rxjava", version.ref = "rxjava" }
@@ -90,6 +106,10 @@ hilt-gradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-p
 junit = { group = "junit", name = "junit", version.ref = "junit4" }
 
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinX"}
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinX"}
+kotlinx-coroutines-guava = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-guava", version.ref = "kotlinX" }
 
 [plugins]
 
