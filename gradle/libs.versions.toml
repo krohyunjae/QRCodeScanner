@@ -1,0 +1,103 @@
+[versions]
+
+androidDesugarJdkLibs = "2.0.3"
+
+androidxActivity = "1.8.0-alpha06"
+androidxAppCompat = "1.6.1"
+androidxAnnotation = "1.6.0"
+androidxBrowser = "1.5.0"
+androidxComposeBom = "2023.09.01"
+androidxComposeCompiler = "1.5.2"
+androidxComposeMaterial3 = "1.2.0-alpha08"
+androidxConstraint = "2.1.4"
+androidxConstraintCompose = "1.0.1"
+androidxCoordinator = "1.2.0"
+androidxCore = "1.12.0"
+androidxFragment = "1.5.7"
+androidxGlance = "1.0.0-beta01"
+androidxHiltCompiler = "1.1.0-alpha01"
+androidxHilt = "1.0.0"
+androidxLifecycle = "2.6.1"
+androidxNavigation = "2.7.6"
+
+androidCamera = "1.3.1"
+androidCameraMlKit = "1.4.0-alpha03"
+googleMlKit = "17.3.0"
+googleBarcodeScanning = "18.3.0"
+
+rxandroid = "2.1.1"
+rxjava = "2.2.21"
+rxkotlin = "2.4.0"
+
+gradle = "8.1.1"
+hilt = "2.48"
+hiltExt = "1.0.0"
+
+junit4 = "4.13.2"
+
+kotlin = "1.9.0"
+kotlinX = "1.7.1"
+kotlinxCoroutines = "1.6.4"
+kotlinxSerializationJson = "1.5.1"
+
+ksp = "1.9.0-1.0.13"
+
+google-services = "4.3.15"
+
+[libraries]
+
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidxActivity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-appcompat-resources = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidxAnnotation" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "androidxBrowser" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "androidxComposeCompiler" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "androidxComposeMaterial3" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-viewbinding = { group = "androidx.compose.ui", name = "ui-viewbinding" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidxConstraint" }
+androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "androidxConstraintCompose" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
+androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "androidxHilt" }
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "androidxHiltCompiler" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "androidxLifecycle" }
+androidx-lifecycle-reactivestreams-ktx = { group = "androidx.lifecycle", name = "lifecycle-reactivestreams-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidxNavigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigation" }
+
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "google-services" }
+
+rxandroid = { group = "io.reactivex.rxjava2", name = "rxandroid", version.ref = "rxandroid" }
+rxjava = { group = "io.reactivex.rxjava2", name = "rxjava", version.ref = "rxjava" }
+rxkotlin = { group = "io.reactivex.rxjava2", name = "rxkotlin", version.ref = "rxkotlin" }
+
+android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+androidx-navigation-safeArgs-gradlePlugin= { group = "androidx.navigation", name = "navigation-safe-args-gradle-plugin", version.ref = "androidxNavigation" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+
+hilt-gradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit4" }
+
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+[plugins]
+
+android-application = { id = "com.android.application", version.ref = "gradle" }
+android-library = {id = "com.android.library", version.ref = "gradle" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-serialize = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "androidxNavigation" }
