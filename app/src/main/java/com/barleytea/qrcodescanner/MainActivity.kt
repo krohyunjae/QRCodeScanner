@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
         // check for permission
        if(ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-
+            init()
         } else {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), 101)
        }
